@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 
 *{
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   border: none;
   outline: none;
-  font-family: "Afacad Flux", system-ui;  
+  font-family: "Afacad Flux", system-ui; 
+  text-align: center; 
 }
 html{
   font-size: 70%;
 }
 header{
-  margin-top: 1%;  
+  margin-top: 2%;  
   width: 100%;
-  padding: 16px 8%;
+  padding: 8px 5%;
   background-color: transparent;
   filter: drop-shadow(10px);
   display: inline-block;
@@ -29,11 +31,11 @@ body{
   background-color: #d3eff8;
   color: #2270dd;
 }
-img{
-  background-image: url('files/images/Website Picture.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.main-image{
+  margin-top: 2%;
+  width: 325px;  
+  border-radius: 50%;
+  padding: 0.5%;
 }
 .logo{
   margin-top: 1%;
@@ -43,22 +45,45 @@ img{
   cursor: pointer;
   transition: 0.5s ease;
 }
-nav a{
+nav{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #d3eff8;
+}
+.menu{
+  float: left;
+  width: 5%;
   font-size: 20px;
-  color: white;
+  color: #2270dd;
   margin-top: 1%;
-  margin-left: 64px;
-  float: right;
+  margin-left: 20px;
   font-weight: 300;
   transition: 0.3s ease;
-  border-bottom: 1px solid;
 }
+h1{
+  font-size: 50px;
+  font-weight: 400;
+
+}
+h3{
+  font-size: 30px;
+  font-weight: 300;
+}
+.icons{
+  font-size: 45px;
+  color: #2270dd;
+  width: 20%;
+  margin: 1%;
+}
+
 .logo:hover,
-.icon:hover{
+.menu:hover,
+.icons:hover{
   transform: scale(1.1);
   color: #88b2ec;
 }
-nav a:hover,
 nav a.icon{
   color: #2270dd;
 }
