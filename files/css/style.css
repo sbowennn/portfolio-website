@@ -19,7 +19,7 @@ header{
   margin-top: 2%;  
   width: 100%;
   padding: 8px 5%;
-  background-color: transparent;
+  background-color: transparent; 
   filter: drop-shadow(10px);
   display: inline-block;
   z-index: 100;
@@ -70,6 +70,11 @@ h1{
 h3{
   font-size: 30px;
   font-weight: 300;
+  background: linear-gradient(to right, #1f57ff 0%, #ff1fe5 100%); 
+  /* original:  #6699ff 0%, #ff99ff 100%
+  OR update #1f57ff to #ff1fe5 or */
+  background-clip: text;
+  color: transparent;
 }
 .icons{
   font-size: 45px;
@@ -87,5 +92,50 @@ h3{
 nav a.icon{
   color: #2270dd;
 }
-
+section h2,
+section p{
+  margin-bottom: 18px;
+}
+#skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 50px;
+  color: #88b2ec;
+}
+.skills{
+  font-size: 20px;
+  font-weight: 500;
+}
+.img-skills{
+  width: 30px;
+}
+.languages, 
+.tools{
+  padding: 20px;
+}
+.logos{
+  font-size: 35px;
+}
+.html{
+  color: #e34c26;
+}
+.css{
+  color: #264de4;
+}
+.js{
+  color: #f0db4f;
+}
+.py{
+  color: #306998;
+}
+.github{
+  color: #2b3137;
+}
+.react{
+  color: #61dbfb;
+}
+.webflow{
+  color: #146ef5;
+}
 
