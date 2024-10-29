@@ -197,4 +197,18 @@ span{
 }
 
 /*--FOOTER--*/
+#footer{   
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.name{
+  font-size: 14px;
+  padding-top: 1%;
+  margin-top: 20px;
+}
+.name,
+.links{
+  padding: 20px;
+}
 
