@@ -27,18 +27,11 @@ html{
   transition: 0.5s ease;
 }
 /*--HEADER - HOME--*/
-header{
-  margin-top: 1%;  
-  width: 100%;
-  background-color: transparent; 
-  filter: drop-shadow(10px);
-  display: inline-block;
-  z-index: 100;
-}
+
 body{
   /*width: 100%;  can it be 100dvw?
   height: 100vh; */
-  overflow-x: hidden;
+ 
   background-color: #e9f9ff;
   color: #034198;
 }
@@ -48,18 +41,19 @@ body{
   border-radius: 50%;
   padding: 0.5%;
 }
-.logo{
-  margin-left: 2%;
+@media screen and (min-width: 760px){
+.active{
+  margin-left: 3%;
+  padding-right: 20%;
   float: left;
   font-size: 52px;
   color: #034198;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   letter-spacing: 1px;
 }
-
-nav{
+.mobile-menu{
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -67,13 +61,17 @@ nav{
   background-color: #d3eff8;
 }
 .menu{
-  float: right;
-  font-size: 20px;
+  float: left;
+  font-size: 16px;
   color: #034198;
-  margin-top: 2.5%;
-  margin-right: 40px;
-  font-weight: 300;
+  margin-top: 3.5%;
+  margin-right: 16px;
+  font-weight: 400;
   transition: 0.3s ease;
+}
+.bars{
+  display: none;
+}
 }
 h1{
   font-size: 45px;
@@ -95,9 +93,9 @@ h3{
   background-clip: text;
   color: transparent;
 }
-
-.logo:hover,
+.active:hover,
 .menu:hover,
+.bars:hover,
 .icons:hover{
   transform: scale(1.1);
   color: #88b2ec;
@@ -211,4 +209,57 @@ span{
 .links{
   padding: 20px;
 }
+
+/*--VIEW MENU IN MOBILE PHONE--*/
+
+@media screen and (max-width: 760px){
+  .mobile-container {
+    max-width: 760px;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+  }
+  .mobile-menu {
+    overflow: hidden;
+    background-color: #d3eff8;
+    position: relative;
+  }
+  
+  .mobile-menu #menu {
+    display: none;
+  }
+  .mobile-menu a {
+    color: #034198;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+  }
+  .mobile-menu a.bars {
+    font-size: 32px;
+    background: #88b2ec;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.3s ease;
+  }
+  .mobile-menu a:hover {
+    background-color: #88b2ec;
+    color: #d3eff8;
+  }
+  .active {
+    font-size: 36px !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #88b2ec;
+    color: #d3eff8;
+    transition: 0.3s ease;
+  }
+  #skills{
+    display: initial;
+  }
+}
+
+
 

@@ -1,4 +1,8 @@
-const matchResult = window.matchMedia("(max-width: 767px)");
-
-console.log(matchResult);
-
+function mobileMenu() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
