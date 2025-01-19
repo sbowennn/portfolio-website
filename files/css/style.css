@@ -28,10 +28,7 @@ html{
 }
 /*--HEADER - HOME--*/
 
-body{
-  /*width: 100%;  can it be 100dvw?
-  height: 100vh; */
- 
+body{ 
   background-color: #e9f9ff;
   color: #034198;
 }
@@ -45,6 +42,7 @@ body{
 .active{
   margin-left: 3%;
   padding-right: 20%;
+  margin-bottom: 0;
   float: left;
   font-size: 52px;
   color: #034198;
@@ -58,11 +56,12 @@ body{
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #d3eff8;
+  background-color: #88b2ec;
 }
 .menu{
   float: left;
-  font-size: 16px;
+  margin-bottom: 22px;
+  font-size: 28px;
   color: #034198;
   margin-top: 3.5%;
   margin-right: 16px;
@@ -88,8 +87,6 @@ h3{
   font-size: 26px;
   font-weight: 400;
   background: linear-gradient(to top,#ff00ae 0%, #013885 100%); 
-  /* original:  #6699ff 0%, #ff99ff 100%
-  OR update #1f57ff to #ff1fe5 or */
   background-clip: text;
   color: transparent;
 }
@@ -109,11 +106,7 @@ h3{
   font-size: 20px;
   padding: 20px;
   color: #5b99ef;
-  /* background: linear-gradient(to top,#ff00ae 0%, #013885 100%); 
-  original:  #6699ff 0%, #ff99ff 100%
-  OR update #1f57ff to #ff1fe5 or 
-  background-clip: text;
-  color: transparent;*/
+  
 }
 /*--SKILLS--*/
 section h2,
@@ -212,54 +205,52 @@ span{
 
 /*--VIEW MENU IN MOBILE PHONE--*/
 
-@media screen and (max-width: 760px){
-  .mobile-container {
-    max-width: 760px;
-    margin: auto;
-    color: white;
-    border-radius: 10px;
-  }
-  .mobile-menu {
-    overflow: hidden;
-    background-color: #d3eff8;
-    position: relative;
-  }
-  
-  .mobile-menu #menu {
-    display: none;
-  }
-  .mobile-menu a {
-    color: #034198;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-  }
-  .mobile-menu a.bars {
-    font-size: 32px;
-    background: #88b2ec;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: 0.3s ease;
-  }
-  .mobile-menu a:hover {
-    background-color: #88b2ec;
-    color: #d3eff8;
-  }
-  .active {
-    font-size: 36px !important;
-    font-weight: 500;
-    letter-spacing: 1px;
-    background-color: #88b2ec;
-    color: #d3eff8;
-    transition: 0.3s ease;
-  }
-  #skills{
-    display: initial;
-  }
+@media screen and (max-width: 1060px){
+.mobile-container {
+  max-width: 1060px;
+  margin: auto;
+  color: white;
+  border-radius: 10px;
 }
-
+.mobile-menu {
+  overflow: hidden;
+  background-color: #88b2ec;
+  position: relative;
+}
+.mobile-menu a {
+  color: #034198;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+.mobile-menu a.bars {
+  font-size: 32px;
+  background: #88b2ec;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.3s ease;
+}
+.mobile-menu a:hover {
+  background-color: #88b2ec;
+  color: #d3eff8;
+}
+.mobile-menu #menu {
+  display: none;
+}
+.active {
+  font-size: 36px !important;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #88b2ec;
+  color: #d3eff8;
+  transition: 0.3s ease;
+}
+#skills{
+  display: initial;
+}
+}
 
 
