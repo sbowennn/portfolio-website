@@ -40,9 +40,9 @@ body{
 }
 @media screen and (min-width: 760px){
 .active{
-  margin-left: 3%;
+  margin-left: 4%;
   padding-right: 20%;
-  margin-bottom: 0;
+  margin-top: 2%;
   float: left;
   font-size: 52px;
   color: #034198;
@@ -60,7 +60,8 @@ body{
 }
 .menu{
   float: left;
-  margin-bottom: 22px;
+  margin-left: 1%;
+  margin-bottom: 3%;
   font-size: 28px;
   color: #034198;
   margin-top: 3.5%;
@@ -95,7 +96,7 @@ h3{
 .bars:hover,
 .icons:hover{
   transform: scale(1.1);
-  color: #88b2ec;
+  color: #ebedf0;
 }
 
 /*--ABOUT--*/
@@ -205,9 +206,9 @@ span{
 
 /*--VIEW MENU IN MOBILE PHONE--*/
 
-@media screen and (max-width: 1060px){
+@media screen and (max-width: 1160px){
 .mobile-container {
-  max-width: 1060px;
+  max-width: 1160px;
   margin: auto;
   color: white;
   border-radius: 10px;
@@ -241,8 +242,10 @@ span{
   display: none;
 }
 .active {
-  font-size: 36px !important;
-  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  font-size: 38px !important;
+  font-weight: 600;
   letter-spacing: 1px;
   background-color: #88b2ec;
   color: #d3eff8;
